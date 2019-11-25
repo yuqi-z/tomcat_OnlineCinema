@@ -316,6 +316,20 @@
 			<artifactId>spring-mobile-device</artifactId>
 			<version>1.1.5.RELEASE</version>
 		</dependency>
+<!-- https://mvnrepository.com/artifact/com.lowagie/itext -->
+<dependency>
+    <groupId>com.lowagie</groupId>
+    <artifactId>itext</artifactId>
+    <version>2.1.7</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.olap4j/olap4j -->
+<!--
+<dependency>
+    <groupId>org.olap4j</groupId>
+    <artifactId>olap4j</artifactId>
+    <version>0.9.7.145</version>
+</dependency>
+-->
 
 	</dependencies>
 
@@ -326,6 +340,11 @@
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.2</version>
+				<configuration>
+                                 	<server>tomcat-development-server</server>
+<port>8030</port>
+
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
